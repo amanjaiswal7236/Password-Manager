@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="rough.css">
+</head>
+<body>
+    <h1>Password Manager</h1>
+    <form id="passwordForm">
+        <label for="website">Website:</label>
+        <input type="text" id="website" required><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        <button type="submit">Save Password</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="passwordTable">
+        </tbody>
+    </table>
+
+    <script src="rough.js"></script>
+</body>
+</html>
